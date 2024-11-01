@@ -3,6 +3,7 @@ package com.jwetherell.algorithms.mathematics;
 public class Division {
 
     public static final long division(int a, int b) {
+        // Error if divide by zero
         if (b == 0) {
             throw new IllegalArgumentException("/ by zero");
         }
@@ -11,6 +12,11 @@ public class Division {
     }
 
     public static final long divisionUsingLoop(int a, int b) {
+        // Error if divide by zero
+        if (b == 0) {
+            throw new IllegalArgumentException("/ by zero");
+        }
+
         int absA = Math.abs(a);
         int absB = Math.abs(b);
 
@@ -25,6 +31,7 @@ public class Division {
     }
 
     public static final long divisionUsingRecursion(int a, int b) {
+        // Error if divide by zero
         if (b == 0) {
             throw new IllegalArgumentException("/ by zero");
         }
@@ -44,6 +51,7 @@ public class Division {
     }
 
     public static final long divisionUsingMultiplication(int a, int b) {
+        // Error if divide by zero
         if (b == 0) {
             throw new IllegalArgumentException("/ by zero");
         }
@@ -64,6 +72,7 @@ public class Division {
     }
 
     public static final long divisionUsingShift(int a, int b) {
+        // Error if divide by zero
         if (b == 0) {
             throw new IllegalArgumentException("/ by zero");
         }
@@ -88,6 +97,7 @@ public class Division {
     }
 
     public static final long divisionUsingLogs(int a, int b) {
+        // Error if divide by zero
         if (b == 0) {
             throw new IllegalArgumentException("/ by zero");
         }
